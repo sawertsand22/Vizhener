@@ -45,8 +45,9 @@ function Decrypting(key, decrypt)
     var calc1 = 0;
     var calc2 = 0;
     for (let i = 0; i < decrypt.length; i++) {
-         if (keyStr[i]==' ')
-            continue;
+         if (keyStr[i]==' '){
+            encrypted+= " ";
+            continue;}
         for (let j = 0; j < str.length; j++) {
             if (decrypt[i] == str[j])
                 calc1 = j+1;
@@ -106,8 +107,9 @@ function encrypting(key,decrypt)
     var calc1 = 0;
     var calc2 = 0;
     for (let i = 0; i < decrypt.length; i++) {
-        if (keyStr[i]==' ')
-            continue;
+        if (keyStr[i]==' '){
+            encrypted+= " ";
+            continue;}
             for (let j = 0; j < str.length; j++) {
             if (decrypt[i] == str[j])
                 calc1 = j+1;
